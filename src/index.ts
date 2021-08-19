@@ -42,8 +42,16 @@
 // arraySample();
 
 //07 ジェネリック型・ポリモーフィズム
-import genericsBasicSample from "./generics/basic";
-genericsBasicSample();
+// import genericsBasicSample from "./generics/basic";
+// genericsBasicSample();
 
-import genericsAdvancedSample from "./generics/advanced";
-genericsAdvancedSample();
+// import genericsAdvancedSample from "./generics/advanced";
+// genericsAdvancedSample();
+
+// 09 InterfaceとType typeAlias
+// import { popComic } from "./interface/interface";
+// console.log(popComic.getPublishYear());
+
+// 10 非同期処理
+import asyncAwaitSample from "./asynchronous/asyncAwait";
+asyncAwaitSample();
