@@ -1,4 +1,5 @@
-/* 
+"use strict";
+/*
 // トラハック TypeScript入門
 // import World from "./world";
 
@@ -7,13 +8,13 @@
 // world.sayHello(root);
 
 // 03 基本の型定義
-// import { primitiveSample } from "./basic"; 
+// import { primitiveSample } from "./basic";
 // primitiveSample();
-// import { notExistSample } from "./basic"; 
+// import { notExistSample } from "./basic";
 // notExistSample();
-// import { anySample } from "./basic"; 
+// import { anySample } from "./basic";
 // anySample();
-// import { unknownSample } from "./basic"; 
+// import { unknownSample } from "./basic";
 // unknownSample();
 
 // 04 関数の定義
@@ -59,17 +60,16 @@
 // asyncAwaitSample();
 
  */
-
+Object.defineProperty(exports, "__esModule", { value: true });
 // Survival Typescript 演習
-import { generator } from "./survival/function";
-const gen = generator();
-for(let i=0;i<10;i++) {
+var function_1 = require("./survival/function");
+var gen = function_1.generator();
+for (var i = 0; i < 10; i++) {
     console.log("generator sample 1: ", gen.next().value);
 }
-import { JetLag } from "./survival/function";
-const jetlag = new JetLag("taro");
+var function_2 = require("./survival/function");
+var jetlag = new function_2.JetLag("taro");
 jetlag.replyFunction(1000);
-
-import { Operator } from "./survival/function";
-const op = new Operator(0);
+var function_3 = require("./survival/function");
+var op = new function_3.Operator(0);
 console.log("1+2+3+4+5 = ", op.sum(1).sum(2).sum(3).sum(4).sum(5).getResult());
